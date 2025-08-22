@@ -18,5 +18,12 @@ public class WordCounterTest {
         String re = wordCounter.takeWord("",2);
         assertEquals("Processed: (Empty); n = 2", re);
     }
+    @Test
+    public void testOutOfRangeWordCounter() {
+        WordCounter wordCounter = new WordCounter();
+        String re = wordCounter.takeWord("hello world qwerty world",7);
+        assertEquals("Processed: hello world qwerty world; n = 7", re);
+    }
+
 
 }

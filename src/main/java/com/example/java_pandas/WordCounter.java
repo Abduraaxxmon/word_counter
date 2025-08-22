@@ -13,7 +13,7 @@ public class WordCounter {
             return wordList.get(n+1);
 
         }catch (IndexOutOfBoundsException e) {
-            return "Invalid index: "+ n + " size= "+word.length();
+            return "index out of range";
 
         }
     }
